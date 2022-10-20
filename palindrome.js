@@ -1,13 +1,13 @@
 let str="abccba"
-let n=str.length
-let flag=0
-for(let i=0;i<n/2;i++){
-  if(str[i]!=str[(n-1)-i]){
-    console.log("Yes")
-    flag=1;
-    break;
+let new_str=""
+
+for(let i=str.length-1;i>=0;i--){
+  new_str+=str[i];
+  if(new_str==str){
+    print="Yes"
+  }else{
+    print="No"
   }
-}
-if (flag==1){
-  console.log("No")
-}
+  }
+console.log(print);
+
